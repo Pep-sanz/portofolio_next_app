@@ -1,11 +1,11 @@
 'use client'
 
+import useHasMounted from '@/hooks/useHasMounted'
 import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import React from 'react'
 import { BsCloudMoon, BsCloudSun } from 'react-icons/bs'
 
-import useHasMounted from '@/hooks/useHasMounted'
 
 export default function ToggleThemeIcon() {
   const { setTheme, resolvedTheme } = useTheme()
